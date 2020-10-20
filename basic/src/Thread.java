@@ -39,7 +39,7 @@ public class Thread {
         //此时锁的优先权在thread1
         MyThread thread1 = new MyThread(lock);
         thread1.start();
-        //当thread1结束时，释放所资源，thread2获取锁
+        //当thread1结束时，释放锁资源，thread2获取锁
         MyThread thread2 = new MyThread(lock);
         thread2.start();
         try {
