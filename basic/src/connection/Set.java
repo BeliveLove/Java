@@ -21,7 +21,7 @@ public class Set {
          * 3.1简单的来说就是HashSet的Value等于HashMap的Key
          * 4.HashMap的putVal方法，通过将Key值转化为Hash值来保证KEY的唯一性(onlyIfAbsent属性:确定是否覆盖已存在的KEY值的VALUE值)
          * 5.HashSet默认的PRESENT对象目前还不了解
-         * 6.Hash冲突:多个对象只要它们的值一样，它们的Hash值就一样。因此不同对象的值一样，它们的Hash值也一样，这就是Hash冲突
+        
          */
 
         HashSet hashSet = new HashSet();
