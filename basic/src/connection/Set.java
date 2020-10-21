@@ -10,10 +10,10 @@ import java.util.function.Consumer;
  */
 public class Set {
     public static void main(String[] args) {
-        HashSet();
+        hashSet();
     }
 
-    public static void HashSet() {
+    public static void hashSet() {
         /* 1.HashSet底层就是HashMap实现的
          * 2.HashSet默认使用HashMap的初始大小以及加载因子
          * 3.HashSet的Value实际上为HashMap的KEY，根据HashMap的KEY的唯一性，来确定HashSet值的唯一性
@@ -26,6 +26,7 @@ public class Set {
         hashSet.add("YYB");
         hashSet.add("YYB");
         hashSet.add("YYB1");
+
         hashSet.forEach((el) -> {
             System.out.println(el);
         });
