@@ -1,13 +1,17 @@
 package map;
 
 import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author Administrator
  */
-public class Map {
+public class HsMap {
     public static void main(String[] args) {
         hashMap();
+        ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
+        Hashtable hashtable = new Hashtable();
     }
 
     public static void hashMap() {

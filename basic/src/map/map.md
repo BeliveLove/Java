@@ -1,5 +1,13 @@
 # MAP
 ## HashMAP(无序)
+```
+1.HashMap线程不安全
+    解决方案:   
+        1.1:使用HashTable(使用synchronized是的只能单线程访问)
+        1.2:ConcurrentHashMap
+```
+
+    
 ```   
 HashMap的put操作
 final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
