@@ -1,5 +1,6 @@
 # Connection
 ## Set  (无序不重复)
+```Set接口扩展自Collection，它与List的不同之处在于，规定Set的实例不包含重复的元素。在一个规则集内，一定不存在两个相等的元素。AbstractSet是一个实现Set接口的抽象类，Set接口有三个具体实现类，分别是散列集HashSet、链式散列集LinkedHashSet和树形集TreeSet```
 ### HashSet (无序)
 #####  
    * 什么是Hash:可以认为是数据对于地址的映射
@@ -18,7 +19,6 @@
 ### TreeSet (需要排序)
 ## List (有序可重复)
 ### ArrayList   (方便查改)
-
 #### minCapacity:当前存入元素的上限
 #### 1.JDK8.0版本的ArrayList的初始大小为0
 #### 2.ArrayList的add操作
@@ -45,3 +45,4 @@
     修改数组容量上限,且不改变原数组的数据
 
 ### LinkedList  (方便增删)
+#### 链表和数组的最大区别在于它们对元素的存储方式的不同导致它们在对数据进行不同操作时的效率不同，同样，ArrayList与LinkedList也是如此，实际使用中我们需要根据特定的需求选用合适的类，如果除了在末尾外不能在其他位置插入或者删除元素，那么ArrayList效率更高，如果需要经常插入或者删除元素，就选择LinkedList

@@ -1,15 +1,14 @@
 # MAP
 ## HashMAP(无序)
+### HashMap线程不安全
 ```
-1.HashMap线程不安全
-    解决方案:   
-        1.1:使用HashTable(使用synchronized是的只能单线程访问)
-        1.2:ConcurrentHashMap
-```
-
-    
+解决方案:   
+        1.1:使用HashTable(使用synchronized是的只能单线程访问)        全局锁(全局单锁,只能同时支持单线程单事务)
+        1.1.1:使用HashTable的优势,无论怎么玩，获得的始终是最新数据
+        1.2:ConcurrentHashMap       局部锁(对于不同的事物可以多线程访问)
+```    
+### HashMap的put操作
 ```   
-HashMap的put操作
 final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
                    boolean evict) {
         HashMap.Node<K, V>[] tab;
@@ -71,8 +70,9 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
         return null;
     }
 ```
+### HashMap扩容操作
 ```
-HashMap扩容操作
+
     final Node<K,V>[] resize() {
         //扩容操作分为第一次以及第n次
         Node<K,V>[] oldTab = table;
@@ -154,4 +154,6 @@ HashMap扩容操作
     }
 ```
 ### LinkedHashMap(保持顺序)
+#### LinkedHashMap继承自HashMap，它主要是用链表实现来扩展HashMap类，LinkedHashMap中元素既可以按照它们插入图的顺序排序，也可以按它们最后一次被访问的顺序排序
 ## TreeMAP(排序)
+### TreeMap基于红黑树数据结构的实现，键值可以使用Comparable或Comparator接口来排序。TreeMap继承自AbstractMap，同时实现了接口NavigableMap，而接口NavigableMap则继承自SortedMap。SortedMap是Map的子接口，使用它可以确保图中的条目是排好序的
