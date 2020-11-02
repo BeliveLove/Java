@@ -1,4 +1,0 @@
-# MAP
-## HashMAP
-### LinkedHashMap
-## TreeMAP
