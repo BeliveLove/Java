@@ -6,12 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="nacosProvider8003" />
+        <module name="nacosConsumer8004" />
         <module name="myspringboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="myspringboot" target="1.8" />
       <module name="mySpringBoot" target="1.8" />
+      <module name="nacosConsumer8004" target="1.8" />
+      <module name="nacosProvider8003" target="1.8" />
       <module name="springboot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -19,6 +23,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mySpringBoot" options="-parameters" />
       <module name="myspringboot" options="-parameters" />
+      <module name="nacosConsumer8004" options="-parameters" />
+      <module name="nacosProvider8003" options="-parameters" />
       <module name="springboot" options="-parameters" />
     </option>
   </component>

@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/myspringboot/myspringboot.iml" filepath="$PROJECT_DIR$/myspringboot/myspringboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacosConsumer8004/nacosConsumer8004.iml" filepath="$PROJECT_DIR$/nacosConsumer8004/nacosConsumer8004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacosProvider8003/nacosProvider8003.iml" filepath="$PROJECT_DIR$/nacosProvider8003/nacosProvider8003.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
     </modules>
   </component>
